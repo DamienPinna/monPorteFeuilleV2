@@ -1,0 +1,14 @@
+{
+  "name": "portfolio_v2",
+  "version": "1.0.0",
+  "description": "2ème version de mon portfolio",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass --watch ./design/sass/:./design/css/ --style expanded",
+    "prefix": "postcss ./design/css/style.css --use autoprefixer -d ./design/css/prefixed/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": "last 4 versions",
+  "author": "Damien PINNA",
+  "license": "ISC"
+}
