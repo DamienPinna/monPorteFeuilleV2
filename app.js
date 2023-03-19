@@ -1,9 +1,10 @@
-var carousel = document.querySelector(".carousel"),
-  figure = carousel.querySelector("figure"),
-  nav = carousel.querySelector("nav"),
-  numImages = figure.childElementCount,
-  theta = (2 * Math.PI) / numImages,
-  currImage = 0;
+let carousel = document.querySelector(".carousel");
+let figure = carousel.querySelector("figure");
+let nav = carousel.querySelector("nav");
+let numImages = figure.childElementCount;
+let theta = (2 * Math.PI) / numImages;
+let currImage = 0;
+
 nav.addEventListener("click", onClick, true);
 
 function onClick(e) {
