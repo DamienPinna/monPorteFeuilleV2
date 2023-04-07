@@ -21,3 +21,19 @@ function onClick(e) {
 
   figure.style.transform = `rotateY(${currImage * -theta}rad)`;
 }
+
+const texteAnimation = document.querySelector(".txt-animation");
+
+let typeWriter = new Typewriter(texteAnimation, {
+  loop: false,
+});
+
+typeWriter
+  .pauseFor(1000)
+  .changeDelay(50)
+  .typeString("Moi c'est Damien PINNA")
+  .pauseFor(500)
+  .typeString(", développeur ")
+  .changeDelay(100)
+  .typeString("<strong style='color : #2563EB';>SYMFONY</strong>.")
+  .start();
